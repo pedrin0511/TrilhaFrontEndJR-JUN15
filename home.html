@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Mario Start Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--VIDEO DE FUNDO-->
+    <video id="background-video" autoplay muted loop preload="auto">
+        <source src="image/Blender - floating fire particles(720P_HD).mp4" type="video/mp4">
+    </video>
+<!--MENU -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h3>PE<span>DR</span>O</h3></div>
+            <ul class="nav-links">
+               <li>
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/pedro-luiz-de-oliveira-dos-santos-9a98732b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                </div>
+               </li>
+
+               <li>
+                <div class="github">
+                    <a href="https://github.com/pedrin0511"><i class="fa fa-github" style="font-size:24px"></i></a>
+                </div>
+               </li>
+
+               <li>
+                <div class="whats">
+                    <button class="mensagem" onclick="gerarMensagem()"><i class="fa fa-whatsapp" style="font-size:24px"></i></button>
+                </div>
+            </li>
+            </ul>
+            <div class="hamburger" onclick="menu()" id="hamburger">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <aside class="side-menu" id="side-menu"><!--MENU MOBILE-->
+        <div class="close-btn" onclick="menu()">&#10006;</div>
+        <ul>
+            <li>
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/pedro-luiz-de-oliveira-dos-santos-9a98732b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                </div>
+            </li>
+            
+            <li>
+                <div class="github">
+                    <a href="https://github.com/pedrin0511"><i class="fa fa-github" style="font-size:24px"></i></a>
+                </div>
+            </li>
+        
+            <li>
+                <div class="whats">
+                    <button onclick="gerarMensagem()"><i class="fa fa-whatsapp" style="font-size:24px"></i></button>
+                </div>
+            </li>
+        </ul>
+    </aside>
+<!--MENU -->
+
+<!--APRESENTAÇÃ0-->
+<section class="hidden">
+    <div class="apresentacao">
+        <div class="nome">
+            <h1 id="nomeCompleto">
+                <span>P</span><span>e</span><span>d</span><span>r</span><span>o</span>
+                <span>L</span><span>u</span><span>i</span><span>z</span>
+                <span>d</span><span>e</span>
+                <span>o</span><span>l</span><span>i</span><span>v</span><span>e</span><span>i</span><span>r</span><span>a</span>
+                <span>d</span><span>o</span><span>s</span>
+                <span>s</span><span>a</span><span>n</span><span>t</span><span>o</span><span>s</span>
+            </h1>
+            <p>19 anos(2005)</p>
+        </div>
+            <div class="minha-foto"><img src="image/Untitled design.png" alt=""></div><!--MINHA FOTO-->
+    </div>
+</section >
+<!-- FIM APRESENTAÇÃ0-->
+
+<!--CARDS-->
+<section class="hidden">
+    <div class="container-card">
+        <div class="card">
+            <div class="contant" id="contant-sobre">
+                <h2>SOBRE</h2>
+                <p>Me chamo <strong>Pedro</strong>, tenho 19 anos, estou cursando o 3° período em <strong>ADS</strong> (Análise e Desenvolvimento de Sistemas).</p>
+                <p>Quero iniciar minha carreira como Front-end e, futuramente, ser Full-stack para criar projetos que resolvam problemas!</p>
+                <div class="saber-mais"><a href="https://www.linkedin.com/in/pedro-luiz-de-oliveira-dos-santos-9a98732b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">MAIS INFORMAÇÕES</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contant"id="contant-gosto">
+                <h2>GOSTOS</h2>
+                <p>Tenho uma paixão por todos os esportes(futebol, atletismo , natação , etc...).</p>
+                <p>Já fui jogador profissional de futebol, mas a área de tecnologia me chamou muita atenção.</p>
+                <p>Tenho grande vontade de empreender e criar soluções!</p>
+                <div class="saber-mais"><a href="https://www.linkedin.com/in/pedro-luiz-de-oliveira-dos-santos-9a98732b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">MAIS INFORMAÇÕES</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contant"id="contant-mot">
+                <h2>MOTIVAÇÃO</h2>
+                <p>Sem dúvidas, a maior motivação é poder criar negócios para ajudar outras pessoas, seja por meio de um software ou gerando empregos!</p>
+                <p>Quero ter uma boa condição financeira para poder ajudar minha família e também outras pessoas.</p>
+                <div class="saber-mais"><a href="https://www.linkedin.com/in/pedro-luiz-de-oliveira-dos-santos-9a98732b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">MAIS INFORMAÇÕES</a></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--FIM CARDS-->
+
+<section class="hidden">
+
+        <div class="container-projeto">
+            <h1 id="desc-produto">PROJETOS</h1>
+            <div class="carrossel">
+                <button class="antes" onclick="proximoslide(-1)">&#10094;</button>
+                <div class="imagemhome">
+                    <img id="imagem-produtohome" class="imagem"src="image/Capturar.PNG" alt="Produto">
+                    <img id="imagem-extra1" class="imagem" src="image/pagina_em.png"  alt="Imagem Extra 1">
+                    <img id="imagem-extra2" class="imagem" src="image/pagina_em.png" alt="Imagem Extra 2">
+                </div>
+                <button class="depois" onclick="proximoslide(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="go-site">
+            <div class="button-site"><a href="https://seusiteaqui.netlify.app">IR AO SITE</a></div>
+        </div>
+</section>
+<footer>
+    <p>&copy; 2024 Pedro Luiz. Obrigado por olharem um pouco sobre mim...</p>
+        <a href="https://www.linkedin.com/in/pedro-luiz-de-oliveira-dos-santos-9a98732b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> |
+        <a href="https://github.com/pedrin0511">GitHub</a> |
+        <button class="go-whats" onclick="gerarMensagem()">Contato</button>
+    
+</footer>
+    <script src="script.js"></script>
+
+    <!--CODIGO PEGO NO https://micku7zu.github.io/vanilla-tilt.js/ PARA MOVIMENTAÇÃO DOS CARDS-->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare:true, 
+            "max-glare": 0.5,
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>
